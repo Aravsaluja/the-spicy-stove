@@ -28,14 +28,15 @@
         /* Menu Container */
         .menu-container { max-width: 600px; margin: 0 auto; padding: 15px; }
         .section-title { font-size: 22px; color: var(--dark-color); margin: 25px 0 15px; padding-bottom: 5px; border-bottom: 2px solid var(--primary-color); text-transform: uppercase; scroll-margin-top: 130px; letter-spacing: 1px; }
-        .section-subtitle { font-size: 13px; color: #7f8c8d; font-style: italic; margin-top: -10px; margin-bottom: 15px; font-weight: 600; }
+        .section-subtitle { font-size: 14px; color: #7f8c8d; font-style: italic; margin-top: -10px; margin-bottom: 15px; font-weight: 600; }
         
         /* Menu Item Layout */
         .item-card { background: white; padding: 14px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
         .item-details { flex: 1; padding-right: 10px; }
         .item-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
         .item-desc { font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4; }
-        .item-price { font-weight: 700; color: var(--primary-color); font-size: 15px; white-space: nowrap; }
+        .item-price { font-weight: 700; color: var(--primary-color); font-size: 15px; white-space: nowrap; text-align: right;}
+        .item-price-multi { font-size: 13px; line-height: 1.4; text-align: right; }
         
         /* Indicators */
         .badge-veg::before { content: "●"; color: var(--veg-color); font-size: 14px; }
@@ -51,7 +52,9 @@
     <header>
         <div class="brand">The Spicy <span>Stove</span></div>
         <div class="categories-nav">
+            <a href="#soups-starters" class="cat-link">Soups & Starters</a>
             <a href="#tandoor" class="cat-link">Tandoor Se</a>
+            <a href="#main-course" class="cat-link">Main Course</a>
             <a href="#spicy-special" class="cat-link">Spicy Specials</a>
             <a href="#momos" class="cat-link">Momos</a>
             <a href="#rumali-rolls" class="cat-link">Rumali Rolls</a>
@@ -67,51 +70,133 @@
 
     <div class="menu-container">
 
+        <!-- NEW SECTION: SOUPS & STARTERS -->
+        <section id="soups-starters">
+            <h2 class="section-title">Soups & Starters</h2>
+            
+            <div class="section-subtitle">Soup</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Tomato Soup</div></div><div class="item-price">₹135</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Manchow</div></div><div class="item-price">₹135</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Hot & Sour</div></div><div class="item-price">₹135</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Sweet Corn</div></div><div class="item-price">₹135</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Soup</div></div><div class="item-price">₹165</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Manchow</div></div><div class="item-price">₹185</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Hot & Sour</div></div><div class="item-price">₹185</div></div>
+
+            <div class="section-subtitle" style="margin-top:15px;">Veg Starters</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Spring Roll</div></div><div class="item-price">₹145</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Corn Salt & Pepper</div></div><div class="item-price">₹145</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Crispy Corn</div></div><div class="item-price">₹155</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Salt & Pepper</div></div><div class="item-price">₹145</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">French Fries</div></div><div class="item-price">₹110</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Gobhi</div></div><div class="item-price">₹265</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Peri-Peri French Fries</div></div><div class="item-price">₹125</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Potato</div></div><div class="item-price">₹165</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Honey Chilli Potato</div></div><div class="item-price">₹185</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Manchurian</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Paneer</div></div><div class="item-price">₹265</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Mashroom</div></div><div class="item-price">₹265</div></div>
+
+            <div class="section-subtitle" style="margin-top:15px;">Non Veg Starter</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Popcorn</div></div><div class="item-price">₹150</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Spring Roll</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chilli Chicken</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Crispy Chicken Tangdi</div></div><div class="item-price">₹320</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Kabab Sandwich</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Salt & Pepper</div></div><div class="item-price">₹265</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Manchurian</div></div><div class="item-price">₹255</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Mutton Kebab Sandwich</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Lolipops In Hot & Garlic Sauce</div></div><div class="item-price">₹325</div></div>
+        </section>
+
+        <!-- TANDOOR SE -->
         <section id="tandoor">
             <h2 class="section-title">Tandoor Se</h2>
             
             <div class="section-subtitle">Veg Starters</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Hara Bhara Kabab</div></div><div class="item-price">₹229</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Tandoori Soya Chaap</div></div><div class="item-price">₹210</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Afgani Soya Chaap</div></div><div class="item-price">₹240</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tikka</div></div><div class="item-price">₹279</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Malai Tikka</div></div><div class="item-price">₹279</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mashroom Tikka</div></div><div class="item-price">₹279</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Sab Kuch Platter (Veg)</div><div class="item-desc">6 types of veg tandoori items</div></div><div class="item-price">₹445</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Hara Bhara Kabab</div></div><div class="item-price">₹255</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Tandoori Soya Chaap</div></div><div class="item-price">₹245</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Afgani Soya Chaap</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tikka</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Malai Tikka</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mashroom Tikka</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Sab Kuch Platter (Veg)</div><div class="item-desc">6 types of veg tandoori items</div></div><div class="item-price">₹495</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Non-Veg Starters</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tangdi Kabab (5pc)</div></div><div class="item-price">₹365</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tikka (8pc)</div></div><div class="item-price">₹345</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Lehsuni Tikka (8pc)</div></div><div class="item-price">₹355</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Achari Tikka (8pc)</div></div><div class="item-price">₹355</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Haryali (8pc)</div></div><div class="item-price">₹355</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Malai Tikka (8pc)</div></div><div class="item-price">₹390</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Seekh Kabab (2pc)</div></div><div class="item-price">₹185</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Malai Seekh Kabab (2pc)</div></div><div class="item-price">₹245</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Mutton Seekh Kabab (2pc)</div></div><div class="item-price">₹245</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Tandoori Chicken</div><div class="item-desc">Half / Full</div></div><div class="item-price">₹300/₹480</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Afgani Chicken</div><div class="item-desc">Half / Full</div></div><div class="item-price">₹320/₹490</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Sab Kuch Non Veg Platter</div><div class="item-desc">Chicken Tikka, Chicken Malai Tikka, Mutton Seekh Kabab, Chicken Haryali Tikka, Chicken Seekh Kabab</div></div><div class="item-price">₹659</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tangdi Kabab (5pc)</div></div><div class="item-price">₹385</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tikka (8pc)</div></div><div class="item-price">₹365</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Lehsuni Tikka (8pc)</div></div><div class="item-price">₹375</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Achari Tikka (8pc)</div></div><div class="item-price">₹375</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Malai Tikka (8pc)</div></div><div class="item-price">₹425</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Seekh Kabab (2pc)</div></div><div class="item-price">₹220</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Malai Seekh Kabab (2pc)</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Mutton Seekh Kabab (2pc)</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Tandoori Chicken</div><div class="item-desc">Half / Full</div></div><div class="item-price">₹350 / ₹520</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Afgani Chicken</div><div class="item-desc">Half / Full</div></div><div class="item-price">₹350 / ₹525</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Sab Kuch Non Veg Platter</div><div class="item-desc">Chicken Tikka, Chicken Malai Tikka, Mutton Seekh Kabab, Chicken Seekh Kabab</div></div><div class="item-price">₹799</div></div>
         </section>
 
+        <!-- NEW SECTION: MAIN COURSE -->
+        <section id="main-course">
+            <h2 class="section-title">Main Course</h2>
+            
+            <div class="section-subtitle">Veg Main Course</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chana Masala</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Yellow Dal Tadka</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Rajma Masala</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Dal Makhni</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Shahi Paneer</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Kadhai Paneer</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Matar Paneer</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tikka Masala</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Butter Masala</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Methi Malai Paneer</div></div><div class="item-price">₹310</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Korma</div></div><div class="item-price">₹310</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Bhurji</div></div><div class="item-price">₹299</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Methi Malai Matar</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Matar Mashroom</div></div><div class="item-price">₹285</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mix Veg</div></div><div class="item-price">₹270</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Soya Chaap Masala</div></div><div class="item-price">₹275</div></div>
+
+            <div class="section-subtitle" style="margin-top:15px;">Non Veg Indian (Qtr / Half / Full)</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Butter Chicken</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹470<br>Full: ₹889</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Butter Chicken Boneless</div></div><div class="item-price item-price-multi">Half: ₹495<br>Full: ₹775</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Curry</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹460<br>Full: ₹745</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Kadhai Chicken</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹460<br>Full: ₹760</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Masala</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹465<br>Full: ₹760</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Do Pyaza</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹465<br>Full: ₹760</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Keema Masala</div></div><div class="item-price item-price-multi">Qtr: ₹325<br>Full: ₹820</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Handi Chicken</div></div><div class="item-price item-price-multi">Half: ₹465<br>Full: ₹780</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Rara Chicken</div></div><div class="item-price item-price-multi">Half: ₹575<br>Full: ₹830</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Palak Chicken</div></div><div class="item-price item-price-multi">Qtr: ₹275<br>Half: ₹350<br>Full: ₹780</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tikka Masala Boneless</div></div><div class="item-price item-price-multi">Half: ₹465<br>Full: ₹799</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Lababdar Boneless</div></div><div class="item-price item-price-multi">Half: ₹475<br>Full: ₹799</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Kali Mirch</div></div><div class="item-price item-price-multi">Half: ₹390<br>Full: ₹790</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Seekh Masala</div></div><div class="item-price item-price-multi">Half: ₹399<br>Full: ₹750</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Muglai</div></div><div class="item-price item-price-multi">Half: ₹390<br>Full: ₹750</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Patiala Chicken</div></div><div class="item-price item-price-multi">Half: ₹450<br>Full: ₹880</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Lahori Chicken</div></div><div class="item-price item-price-multi">Half: ₹450<br>Full: ₹880</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Curry</div></div><div class="item-price">₹125</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Bhurji</div></div><div class="item-price">₹175</div></div>
+        </section>
+
+        <!-- SPICY SPECIALS -->
         <section id="spicy-special">
             <h2 class="section-title">Spicy Specials</h2>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Spicy Special Thali (Non-Veg)</div><div class="item-desc">Dal Makhni, Butter Chicken, Chicken Seekh Kabab (2pc), Matar Pulao, Lachha Parantha, Butter Naan, Raita, Salad, Papad, Pickle, Icecream</div></div><div class="item-price">₹449</div></div>
             
-            <div class="section-subtitle" style="margin-top:15px;">Kulcha & Pao Meals</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Soya Keema + Kulcha</div></div><div class="item-price">₹145</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Bhurji + Kulcha</div></div><div class="item-price">₹185</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Stuffed Veg Kulcha</div></div><div class="item-price">₹145</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Poha</div></div><div class="item-price">₹65</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Bhurji + Kulcha</div></div><div class="item-price">₹145</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Bhurji + Pao</div></div><div class="item-price">₹125</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Keema + Pao</div></div><div class="item-price">₹175</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Stuffed Chicken Kulcha</div></div><div class="item-price">₹185</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Masala Omlet</div></div><div class="item-price">₹85</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Cheese & Mashroom Omlet</div></div><div class="item-price">₹145</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Keema + Kulcha</div></div><div class="item-price">₹185</div></div>
+            <div class="section-subtitle">Kulcha & Pao Meals</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Soya Keema + Kulcha</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Bhurji + Kulcha</div></div><div class="item-price">₹210</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Stuffed Veg Kulcha</div></div><div class="item-price">₹165</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Poha</div></div><div class="item-price">₹85</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Bhurji + Kulcha</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Stuffed Chicken Kulcha</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Masala Omlet</div></div><div class="item-price">₹95</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Cheese & Mashroom Omlet</div></div><div class="item-price">₹165</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Keema + Kulcha</div></div><div class="item-price">₹225</div></div>
         </section>
 
+        <!-- MOMOS -->
         <section id="momos">
             <h2 class="section-title">Momos</h2>
             
@@ -120,22 +205,21 @@
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Fried Momo (8pc)</div></div><div class="item-price">₹145</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Momo (8pc Steam)</div></div><div class="item-price">₹150</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Fried Momo (8pc)</div></div><div class="item-price">₹165</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Cheese & Corn Momo (6pc Steam)</div></div><div class="item-price">₹155</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Pizza Momo (6pc Steam)</div></div><div class="item-price">₹165</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Tandoori Momo</div></div><div class="item-price">₹215</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Kukure Momo</div></div><div class="item-price">₹215</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Kukure Momo</div></div><div class="item-price">₹235</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tandoori Momo</div></div><div class="item-price">₹235</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Afgani Momo</div></div><div class="item-price">₹235</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Tandoori Momo</div></div><div class="item-price">₹245</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Kukure Momo</div></div><div class="item-price">₹245</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Kukure Momo</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tandoori Momo</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Afgani Momo</div></div><div class="item-price">₹275</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Chicken</div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Momo (8pc Steam)</div></div><div class="item-price">₹160</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Fried Momo (8pc)</div></div><div class="item-price">₹175</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tandoori Momo</div></div><div class="item-price">₹235</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Kurkure Momo</div></div><div class="item-price">₹235</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Afgani Momo</div></div><div class="item-price">₹235</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Tandoori Momo</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Kurkure Momo</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Afgani Momo</div></div><div class="item-price">₹275</div></div>
         </section>
 
+        <!-- RUMALI ROLLS -->
         <section id="rumali-rolls">
             <h2 class="section-title">Rumali Rolls</h2>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Tikka Roll</div></div><div class="item-price">₹135</div></div>
@@ -147,102 +231,122 @@
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Mutton Seekh Roll</div></div><div class="item-price">₹165</div></div>
         </section>
 
+        <!-- NOODLES & MAGGI -->
         <section id="noodles">
             <h2 class="section-title">Noodles & Maggi</h2>
             
             <div class="section-subtitle">Noodles</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Noodles</div></div><div class="item-price">₹125</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Haka Noodles</div></div><div class="item-price">₹145</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Garlic Noodle</div></div><div class="item-price">₹140</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Singapori Noodles</div></div><div class="item-price">₹160</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Noodles</div></div><div class="item-price">₹160</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chilli Chicken Garlic Noodles</div></div><div class="item-price">₹175</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Singapori Noodles</div></div><div class="item-price">₹175</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Haka Noodles</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Noodles</div></div><div class="item-price">₹135</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Haka Noodles</div></div><div class="item-price">₹165</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Garlic Noodle</div></div><div class="item-price">₹160</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Singapori Noodles</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Noodles</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chilli Chicken Garlic Noodles</div></div><div class="item-price">₹185</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Singapori Noodles</div></div><div class="item-price">₹185</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Haka Noodles</div></div><div class="item-price">₹185</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Maggi</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Masala Maggi</div></div><div class="item-price">₹55</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Maggi</div></div><div class="item-price">₹65</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Cheese Maggi</div></div><div class="item-price">₹85</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Masala Maggi</div></div><div class="item-price">₹69</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Maggi</div></div><div class="item-price">₹75</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Cheese Maggi</div></div><div class="item-price">₹99</div></div>
         </section>
 
+        <!-- RICE -->
         <section id="rice">
             <h2 class="section-title">Rice</h2>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Plain Rice</div></div><div class="item-price">₹99</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Jeera Rice</div></div><div class="item-price">₹129</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Pulao (With Raita)</div></div><div class="item-price">₹179</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Masala Khichdi</div></div><div class="item-price">₹175</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Plain Rice</div></div><div class="item-price">₹115</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Jeera Rice</div></div><div class="item-price">₹140</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Pulao (With Raita)</div></div><div class="item-price">₹199</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Masala Khichdi</div></div><div class="item-price">₹199</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Fried Rice</div></div><div class="item-price">₹130</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Fried Rice</div></div><div class="item-price">₹150</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Garlic Fried Rice</div></div><div class="item-price">₹155</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Garlic Fried Rice</div></div><div class="item-price">₹175</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Fried Rice</div></div><div class="item-price">₹145</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Fried Rice</div></div><div class="item-price">₹165</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Egg Chicken Fried Rice</div></div><div class="item-price">₹170</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Chilli Garlic Fried Rice</div></div><div class="item-price">₹185</div></div>
         </section>
 
+        <!-- BOWLS & COMBOS -->
         <section id="bowls-combos">
             <h2 class="section-title">Bowls & Combos</h2>
             
             <div class="section-subtitle">Rice Bowl</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Rajma Rice</div></div><div class="item-price">₹90</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Dal Tadka Rice</div></div><div class="item-price">₹90</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chole Masala Rice</div></div><div class="item-price">₹90</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Rajma Rice</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Dal Tadka Rice</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chole Masala Rice</div></div><div class="item-price">₹120</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Fulka Roti Combo</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aalu Matar + 4 Roti</div></div><div class="item-price">₹105</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aalu Gobhi + 4 Roti</div></div><div class="item-price">₹105</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mix Veg + 4 Roti</div></div><div class="item-price">₹105</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Dal Tadka + 4 Roti</div></div><div class="item-price">₹105</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chole Masala + 4 Roti</div></div><div class="item-price">₹105</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Rajma Masala + 4 Roti</div></div><div class="item-price">₹105</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aalu Matar + 4 Roti</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aalu Gobhi + 4 Roti</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mix Veg + 4 Roti</div></div><div class="item-price">₹155</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Dal Tadka + 4 Roti</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chole Masala + 4 Roti</div></div><div class="item-price">₹120</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Rajma Masala + 4 Roti</div></div><div class="item-price">₹120</div></div>
+
+            <div class="section-subtitle" style="margin-top:15px;">Chinese Combo</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Manchurian + Fried Rice/Noodles</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Chilli Paneer + Fried Rice/Noodles</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chicken Manchurian + Fried Rice/Noodles</div></div><div class="item-price">₹225</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Chilli Chicken + Fried Rice/Noodles</div></div><div class="item-price">₹225</div></div>
+
+            <div class="section-subtitle" style="margin-top:15px;">Thalis</div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Student Thali</div><div class="item-desc">Dal Tadka, Mix Veg/Matar Paneer, Jeera Rice, Raita, 3 Roti, Salad</div></div><div class="item-price">₹199</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Veg Thali</div><div class="item-desc">Dal Makhni, Shahi Paneer, Jeera Rice, Salad, 1 Tandoori Roti, 1 Lachha Parantha</div></div><div class="item-price">₹275</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Non-Veg Thali</div><div class="item-desc">Dal Makhni, Chicken Curry, Jeera Rice, Salad, 1 Tandoori Roti, 1 Lachha Parantha</div></div><div class="item-price">₹349</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Spicy Special Thali (Veg)</div><div class="item-desc">Dal Makhni, Paneer Butter Masala, Hara Bhara Kabab, Matar Pulao, Lachha Parantha, Butter Naan, Raita, Salad, Papad, Pickle, Icecream</div></div><div class="item-price">₹499</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-nonveg">Spicy Special Thali (Non-Veg)</div><div class="item-desc">Dal Makhni, Butter Chicken, Chicken Seekh Kabab (2pc), Matar Pulao, Lachha Parantha, Butter Naan, Raita, Salad, Papad, Pickle, Icecream</div></div><div class="item-price">₹499</div></div>
         </section>
 
+        <!-- PARANTHA MEALS -->
         <section id="parantha">
             <h2 class="section-title">Parantha Meals</h2>
             <div class="section-subtitle">2 Pcs - Served with Raita, Chatni & Achar</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aloo Parantha Meal</div></div><div class="item-price">₹85</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mix Parantha Meal</div></div><div class="item-price">₹100</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Parantha Meal</div></div><div class="item-price">₹115</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Aloo Parantha Meal</div></div><div class="item-price">₹95</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Mix Parantha Meal</div></div><div class="item-price">₹110</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Paneer Parantha Meal</div></div><div class="item-price">₹125</div></div>
         </section>
 
+        <!-- BREADS & SIDES -->
         <section id="breads">
             <h2 class="section-title">Breads & Sides</h2>
             
             <div class="section-subtitle">Breads</div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Tawa Roti</div></div><div class="item-price">₹12</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Tawa Roti With Butter</div></div><div class="item-price">₹14</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Plain Parantha</div></div><div class="item-price">₹15</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Tandoori Roti</div></div><div class="item-price">₹18</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Tandoori Butter Roti</div></div><div class="item-price">₹22</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Tawa Roti</div></div><div class="item-price">₹15</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Tawa Roti With Butter</div></div><div class="item-price">₹19</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Plain Parantha</div></div><div class="item-price">₹20</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Tandoori Roti</div></div><div class="item-price">₹22</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Tandoori Butter Roti</div></div><div class="item-price">₹25</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Rumali Roti</div></div><div class="item-price">₹25</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Lachha Parantha</div></div><div class="item-price">₹39</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Plain Naan</div></div><div class="item-price">₹39</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Missi Roti</div></div><div class="item-price">₹49</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Butter Naan</div></div><div class="item-price">₹49</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Garlic Naan</div></div><div class="item-price">₹59</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Lachha Parantha</div></div><div class="item-price">₹45</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Plain Naan</div></div><div class="item-price">₹49</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Missi Roti</div></div><div class="item-price">₹55</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Butter Naan</div></div><div class="item-price">₹59</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Garlic Naan</div></div><div class="item-price">₹69</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Pudina Parantha</div></div><div class="item-price">₹69/79</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Stuffed Naan (Aalu/Paneer)</div></div><div class="item-price">₹125</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Green Chilly Parantha</div></div><div class="item-price">₹75</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Accompanies</div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Raita</div></div><div class="item-price">₹30</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Green Salad</div></div><div class="item-price">₹79</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Raita</div></div><div class="item-price">₹50</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Green Salad</div></div><div class="item-price">₹89</div></div>
         </section>
 
+        <!-- BEVERAGES -->
         <section id="beverages">
             <h2 class="section-title">Beverages</h2>
             
             <div class="section-subtitle">Hot Beverages</div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Hot Tea</div></div><div class="item-price">₹30</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Coffee</div></div><div class="item-price">₹40</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Black Coffee</div></div><div class="item-price">₹45</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Honey Lemon Ginger Tea</div></div><div class="item-price">₹75</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Hot Tea</div></div><div class="item-price">₹35</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Coffee</div></div><div class="item-price">₹45</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Black Coffee</div></div><div class="item-price">₹55</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Honey Lemon Ginger Tea</div></div><div class="item-price">₹85</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Herbal Tea</div></div><div class="item-price">₹85</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Hot Chocolate</div></div><div class="item-price">₹135</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Cold Coffee</div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Cold Coffee</div></div><div class="item-price">₹75</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Cold Coffee + Icecream</div></div><div class="item-price">₹90</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Hazelnut Cold Coffee</div></div><div class="item-price">₹129</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Cold Coffee</div></div><div class="item-price">₹85</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Cold Coffee + Icecream</div></div><div class="item-price">₹99</div></div>
+            <div class="item-card"><div class="item-details"><div class="item-name">Hazelnut Cold Coffee</div></div><div class="item-price">₹139</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Shakes</div>
             <div class="addons-box">Add Icecream Rs-30/-</div>
@@ -251,22 +355,20 @@
             <div class="item-card"><div class="item-details"><div class="item-name">Butter Scotch Shake</div></div><div class="item-price">₹99</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Kit Kat Shake</div></div><div class="item-price">₹119</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Oreo Shake</div></div><div class="item-price">₹119</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Brownie Shake</div></div><div class="item-price">₹129</div></div>
 
             <div class="section-subtitle" style="margin-top:15px;">Coolers</div>
             <div class="item-card"><div class="item-details"><div class="item-name">Masala Lemonade</div></div><div class="item-price">₹65</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Vanilla Icecream Float</div></div><div class="item-price">₹85</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Mint Mojito</div></div><div class="item-price">₹99</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name">Black Currant</div></div><div class="item-price">₹99</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Green Apple</div></div><div class="item-price">₹99</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Cold Drink</div></div><div class="item-price">MRP</div></div>
             <div class="item-card"><div class="item-details"><div class="item-name">Mineral Water Bottle</div></div><div class="item-price">MRP</div></div>
         </section>
 
+        <!-- DESSERT -->
         <section id="dessert">
             <h2 class="section-title">Dessert</h2>
             <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Vanilla Ice Cream with Chocolate Syrup</div></div><div class="item-price">₹65</div></div>
-            <div class="item-card"><div class="item-details"><div class="item-name badge-veg">Home Made Ice Creams</div><div class="item-desc">(Kesar Pista + Gulakand)</div></div><div class="item-price">₹55</div></div>
         </section>
 
         <div class="footer-note">THANK YOU FOR VISITING THE SPICY STOVE</div>
